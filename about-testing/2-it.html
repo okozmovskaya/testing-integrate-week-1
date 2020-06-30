@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf8'>
+  <title>it</title>
+
+
+  <!-- testing dependencies -->
+  <script src='../lib/chai.js'></script>
+  <script src='../lib/describe-it.js'></script>
+
+</head>
+
+<body>
+
+  <script>
+    debugger;
+    // use breakpoints! it will make this easier to study
+    //  there is a comment on each line you should breakpoint
+
+    console.log('-- it');
+
+    console.log('it is a function that helps to read test results');
+    it('prints "PASS" when there are no errors', () => {
+      // hello!
+    });
+    it('prints "FAIL" when there is an error', () => {
+      // click on the failing log to read more
+      throw new Error('hello!');
+    });
+
+    console.log('when an assertion fails, an error is thrown \n it will log the error in a pretty way');
+
+    const assert = chai.assert;
+
+    it('4 is equal to 4', () => {
+      assert.strictEqual(4, 4);
+    });
+    it('both arrays contain the same values', () => {
+      assert.deepStrictEqual([1, 2, '3'], [1, 2, 3]);
+    });
+
+
+    console.log('to debug your tests, place a breakpoint at the top of it');
+
+    /**
+     * repeats a string a given number of times
+     * @param {string} str - the string to repeat
+     * @param {number} repeats - how many time to repeat it
+     * @returns {string} the string, repeated
+     */
+    const repeatString = (str, repeats) => {
+      let repeated = '';
+      for (let i = 0; i <= repeats; i++) {
+        repeated += str;
+      }
+      return repeated;
+    };
+
+    it('repeats empty strings', () => {
+      const expected = ''; // breakpoint here
+      const actual = repeatString('', 3);
+      assert.strictEqual(actual, expected);
+    });
+    it('repeats non-empty strings', () => {
+      const expected = 'hihihi'; // breakpoint here
+      const actual = repeatString('hi', 3);
+      assert.strictEqual(actual, expected);
+    });
+  </script>
+
+</body>
+
+</html>
