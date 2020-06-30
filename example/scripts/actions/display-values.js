@@ -14,6 +14,8 @@ const combineStrings = (arrOfStrings) => {
   return allValues;
 };
 
+
+
 // test the function
 const assert = chai.assert;
 
@@ -41,8 +43,12 @@ describe('combineStrings takes an array of strings and makes one string', () => 
 });
 
 
+
+
 // allow users to interact with the function
 const displayValuesHandler = () => {
+  debugger;
+
   console.log('-- action: display values --');
   console.log('inputsArray:', typeof inputsArray, '\n', inputsArray);
 
