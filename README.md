@@ -23,7 +23,6 @@ In this repository there are a few folders, these are the files & folders used i
 
 The rest of the folders are code to study:
 
-- **`/about-testing`**: contains 3 files of code to introduce the basics of testing, meant to be studied in your browser's DevTools
 - **`/example`**: a small fully-working project that uses an array to save user input
 
 ---
@@ -32,11 +31,8 @@ The rest of the folders are code to study:
 
 Most of the code already works, the files you need to work in are listed below. Every other file already works correctly.
 
-### 0.1 Study [`/about-testing`](./about-testing)
 
-Use [breakpoints!](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints/)  it'll make your life easier.
-
-### 0.2 Study [`/example`](./example)
+### 0. Study [`/example`](./example)
 
 ### 1. [`push-to-array.js`](./scripts/actions/push-to-array.js): Fill in the blanks
 
